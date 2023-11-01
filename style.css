@@ -25,5 +25,32 @@ nav {
 
 .product-card {
     width: 130px;
-    height: 199px;
+    height: auto;
+}
+
+.my-prod-card {
+    box-sizing: border-box;
+    width: 220px;
+    height: 350px;
+    /* white-space: wrap; */
+}
+
+.name {
+    font-size: 18px;
+    /* white-space: wrap; */
+}
+
+.thumbnail {
+    width: 160px;
+    height: 170px;
+    margin: auto;
+}
+
+.info {
+    width: 95%;
+    text-wrap: wrap;
+}
+
+.price {
+    font-weight: bold;
 }
