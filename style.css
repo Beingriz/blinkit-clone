@@ -35,6 +35,9 @@
 nav {
     box-sizing: border-box;
     position: sticky;
+    background-color: white;
+    top: 0px;
+    z-index: 1;
     align-items: center;
     box-shadow: 0px 0px 1px black;
 }
@@ -42,6 +45,16 @@ nav {
 .my-card {
     white-space: nowrap;
     overflow-x: scroll;
+    /*Add this*/
+}
+
+.my-card::-webkit-scrollbar {
+    display: none;
+}
+
+.img-card {
+    width: 299px;
+    height: 192px;
 }
 
 .product-card {
@@ -80,7 +93,7 @@ nav {
     nav {
         flex-direction: column;
         justify-content: space-between;
-        align-items: start;
+        align-items: center;
         padding: 20px;
     }
     nav>span {
@@ -105,6 +118,13 @@ nav {
         width: auto;
         margin: 0px;
     }
+    #section-1 {
+        display: none;
+    }
+    #section-3 {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
@@ -117,7 +137,7 @@ nav {
         display: none;
     }
     nav>input {
-        width: 100%;
+        width: 100vw;
     }
     #address {
         padding-top: 12px;
@@ -132,5 +152,12 @@ nav {
         display: flex;
         flex-direction: column;
         width: auto;
+    }
+    #section-1 {
+        display: none;
+    }
+    #section-3 {
+        display: flex;
+        justify-content: space-between;
     }
 }
